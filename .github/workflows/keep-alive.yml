@@ -33,7 +33,7 @@ jobs:
           TG_BOT_TOKEN: ${{ secrets.TG_BOT_TOKEN }}
           TG_CHAT_ID: ${{ secrets.TG_CHAT_ID }}
           REPO_TOKEN: ${{ secrets.REPO_TOKEN }}
-          FORCE_JAVASCRIPT_ACTIONS_TO_NODE24=true
+          
         run: python scripts/auto_login.py
         
       - name: Keepalive Workflow
